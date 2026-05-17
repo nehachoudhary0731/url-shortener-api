@@ -23,7 +23,6 @@ A production-ready URL shortener built with **FastAPI**, **PostgreSQL**, and **R
 | Cache + Rate Limit | Redis |
 | Auth | JWT (python-jose) + bcrypt |
 | User-Agent Parsing | user-agents |
-| Testing | Pytest |
 
 ## Quick Start
 
