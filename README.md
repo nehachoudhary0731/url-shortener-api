@@ -43,6 +43,35 @@ cp .env.example .env
 uvicorn app.main:app --reload
 ```
 
+## Environment Variables Setup
+
+Create a `.env` file in the project root:
+
+```env
+DATABASE_URL=postgresql://postgres:password@localhost:5432/url_shortener_db
+REDIS_URL=redis://localhost:6379/0
+SECRET_KEY=your-super-secret-key-change-in-production
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=60
+BASE_URL=http://localhost:8000
+SHORT_CODE_LENGTH=7
+RATE_LIMIT_PER_MINUTE=10
+```
+
+### Variable Explanation
+
+| Variable | Description |
+|----------|-------------|
+| `DATABASE_URL` | PostgreSQL database connection URL |
+| `REDIS_URL` | Redis server connection URL |
+| `SECRET_KEY` | Secret key used for JWT token generation |
+| `ALGORITHM` | JWT signing algorithm |
+| `ACCESS_TOKEN_EXPIRE_MINUTES` | JWT token expiry time in minutes |
+| `BASE_URL` | Base domain used for generating short URLs |
+| `SHORT_CODE_LENGTH` | Length of generated short codes |
+| `RATE_LIMIT_PER_MINUTE` | Max shorten requests allowed per IP per minute |
+
+
 ## API Endpoints
 
 ### Auth
