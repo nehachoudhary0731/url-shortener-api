@@ -1,0 +1,43 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+
+# Environment files
+.env
+.env.*
+
+# Pytest
+.pytest_cache/
+
+# VS Code
+.vscode/
+
+# Mac/Linux system files
+.DS_Store
+
+# Logs
+*.log
+
+# SQLite DB
+*.db
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Docker
+*.pid
+
+# IDE files
+.idea/
+
+# Temporary files
+*.tmp
+
+# Alembic cache
+alembic/__pycache__/
